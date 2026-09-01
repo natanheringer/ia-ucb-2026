@@ -1,5 +1,7 @@
 
-""" EU DEVO TER UM NÓ_INICIO, UM GRAFO E UM NÓ_ALVO
+""" 
+-------------------------------------------------------
+     EU DEVO TER UM NÓ_INICIO, UM GRAFO E UM NÓ_ALVO
 
 1 -  DEVO DECLARAR O O GRAFO EM UM DICIONARIO(STRUCT + ARRAY DE PONTEIROS)
 
@@ -7,11 +9,9 @@
      BUSCANDO TODOS OS FILHOS PRIMEIRO.
      A PARTIR DOS FILHOS EXPLORADOS,
      EXPLORAR TODOS OS NOVOS FILHOS.
-
- """
-
-
-"""
+     ATÉ ENCONTRAR O ALVO
+-------------------------------------------------------
+GRAFO ORIGINAL COM HEURISTICAS E VALORES POR ARESTAS. 
 grafo = {
 
         'A': [['B', 2], ['C', 4]],
@@ -38,7 +38,7 @@ heuristica = {
 
 grafo = {
 
-	    'A': ['B', 'C'],
+	'A': ['B', 'C'],
         'B': ['D','E'],
         'C': ['F', 'G'],
         'E': [],
