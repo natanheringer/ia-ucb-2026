@@ -40,6 +40,9 @@ def a_estrela(inicio, alvo):
     visitados = {}
     ordem_expansao = []
     
+    print(f"\n---------------A*----------------\n")
+    print(f"BUSCA INFORMADA!\n")
+    
     while fila_prioridade:
     # busca o indice do nó com maior prioridade(menor valor)
         indice_melhor = 0
@@ -56,13 +59,13 @@ def a_estrela(inicio, alvo):
         
         # se chega ao destino, retorna caminho e custo total gasto
         if no_atual == alvo:
-            print(f"Estados visitados: {ordem_expansao}")
-            print(f"Ordem de expansao: {' -> '.join(ordem_expansao)}")
-            print(f"Quantidade de estados expandidos: {len(ordem_expansao)}")
-            print(f"Caminho: {caminho}")
-            print(f"Tamanho do caminho: {len(caminho)}")
-            print(f"Custo total: {custo_caminho}")
-            print(f"Alvo encontrado: {alvo}")
+            print(f"Estados visitados: {ordem_expansao}\n")
+            print(f"Ordem de expansao: {' -> '.join(ordem_expansao)}\n")
+            print(f"Quantidade de estados expandidos: {len(ordem_expansao)}\n")
+            print(f"Caminho: {caminho}\n")
+            print(f"Tamanho do caminho: {len(caminho)}\n")
+            print(f"Custo total: {custo_caminho}\n")
+            print(f"Alvo encontrado: {alvo}\n")
             return caminho, custo_caminho
             
         # se o nó ja foi visitado por caminho mais curto ou igual, ignora
@@ -85,8 +88,8 @@ def a_estrela(inicio, alvo):
     
 # execucao do algoritmo a*
 caminho_final, custo_total = a_estrela('A', 'J')
-print(f"melhor caminho: {caminho_final}")       
-print(f"custo total: {custo_total}")
+print(f"\nmelhor caminho: {caminho_final}")       
+print(f"\ncusto total: {custo_total}")
     
     
     
