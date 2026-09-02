@@ -43,8 +43,8 @@ def dfs(grafo, inicio, alvo):
         if no_atual == alvo:
             print(f"\n\nEstados Visitados: {visitados}")
             
-            str_expansao = " -> ".join(ordem_expansao)
-            print(f"\nOrdem de expansao dos Estados: {str_expansao}\n")
+            
+            print(f"\nOrdem de expansao dos Estados: {' -> '.join(ordem_expansao)}\n")
             print(f"Quantidade de estados expandidos: {len(ordem_expansao)}\n")
             print(f"Alvo encontrado: {alvo}\n")
             
@@ -55,6 +55,7 @@ def dfs(grafo, inicio, alvo):
                 no  = pai[no]
                 
             caminho.reverse()
+            print(f"Tamanho do caminho: {len(caminho)}")
             print(f"Caminho: ", caminho)
             return
            

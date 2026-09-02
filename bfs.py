@@ -77,7 +77,6 @@ def bfs(grafo, inicio, alvo):
                     print(f"\n\nEstados Visitados: {visitados}\n")
                     print(f"Ordem de expansao dos Estados:  {' -> '.join(ordem_expansao)}\n")
                     print(f"Quantidade  de Estados Expandidos: {len(ordem_expansao)}\n")
-                    
                     print(f"Alvo encontrado: {alvo}\n")
                     
                     caminho = []
@@ -87,7 +86,8 @@ def bfs(grafo, inicio, alvo):
                        no = pai[no]
                     
                     caminho.reverse()
-                    print("Caminho: ", caminho)
+                    print(f"Tamanho do caminho: {len(caminho)}\n")
+                    print(f"Caminho: {caminho}\n")
                     return
  
                 # Processa o nó 
